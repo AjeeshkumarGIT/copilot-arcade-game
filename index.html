@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🐍 Copilot Arcade — Snake</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="arcade-cabinet">
+    <header class="cabinet-header">
+      <h1>SNAKE<span class="accent">ARCADE</span></h1>
+    </header>
+
+    <div class="screen-bezel">
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+      <div id="overlay" class="overlay">
+        <div class="overlay-content">
+          <h2 id="overlayTitle">🐍 SNAKE</h2>
+          <p id="overlayMsg">Press <kbd>SPACE</kbd> to start</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashboard">
+      <div class="stat">
+        <span class="stat-label">SCORE</span>
+        <span id="score" class="stat-value">0</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">HIGH</span>
+        <span id="highScore" class="stat-value">0</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">SPEED</span>
+        <span id="speed" class="stat-value">1</span>
+      </div>
+    </div>
+
+    <footer class="cabinet-footer">
+      <p>Built with <span class="heart">❤</span> &amp; GitHub Copilot</p>
+    </footer>
+  </div>
+
+  <script src="js/game.js"></script>
+</body>
+</html>
